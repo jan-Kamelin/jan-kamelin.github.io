@@ -1,12 +1,7 @@
-/* style.css */
-@font-face {
-  font-family: "nasin nanpa";
-  src: url('nasin-nanpa.otf') format('opentype');
-  font-weight: 400;
-}
+/* style-latin.css - Typewriter font version */
 
 body {
-  font-family: "nasin nanpa";
+  font-family: "Courier New", Courier, monospace;
   line-height: 1.6;
   background-color: #121212; /* Dark background */
   margin: 0;
@@ -25,6 +20,7 @@ header {
 h1 {
   margin: 0;
   font-size: 2.5em;
+  font-family: "Courier New", Courier, monospace;
 }
 
 h2 {
@@ -32,11 +28,13 @@ h2 {
   margin-top: 30px;
   margin-bottom: 10px;
   font-size: 1.8em;
+  font-family: "Courier New", Courier, monospace;
 }
 
 p {
   margin: 10px 0;
   font-size: 1.1em;
+  font-family: "Courier New", Courier, monospace;
 }
 
 ul {
@@ -51,11 +49,13 @@ ul li {
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+  font-family: "Courier New", Courier, monospace;
 }
 
 ul li p {
   margin: 0;
   color: #e0e0e0; /* Light text color */
+  font-family: "Courier New", Courier, monospace;
 }
 
 @media (min-width: 600px) {
