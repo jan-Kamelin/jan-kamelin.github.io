@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirecting...</title>
+  <script>
+    window.onload = function () {
+      const params = new URLSearchParams(window.location.search);
+      const target = params.get("redirect");
+
+      if (target) {
+        // Sanitize the input a little to avoid some malicious tricks
+        const allowedPattern = /^[a-zA-Z0-9.:\/\-_%?&=]+$/;
+
+        if (allowedPattern.test(target)) {
+          // Redirect
+          window.location.href = (target.startsWith("http://") || target.startsWith("https://"))
+            ? target
+            : "https://" + target;
+        } else {
+          document.body.innerText = "Invalid redirect URL.";
+        }
+      } else {
+        document.body.innerText = "No redirect parameter provided.";
+      }
+    };
+  </script>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html>
