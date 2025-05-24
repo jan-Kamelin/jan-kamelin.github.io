@@ -1,0 +1,69 @@
+/* style.css */
+@font-face {
+  font-family: "nasin nanpa";
+  src: url('nasin-nanpa.otf') format('opentype');
+  font-weight: 400;
+}
+
+body {
+  font-family: "nasin nanpa";
+  line-height: 1.6;
+  background-color: #121212; /* Dark background */
+  margin: 0;
+  padding: 0;
+  color: #e0e0e0; /* Light text color */
+}
+
+header {
+  background-color: #1a1a1a; /* Dark gray */
+  color: #ffffff; /* White text */
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+h2 {
+  color: #e0e0e0; /* Light text color */
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 1.8em;
+}
+
+p {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: #2a2a2a; /* Darker gray */
+  border: 1px solid #444; /* Medium gray */
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+ul li p {
+  margin: 0;
+  color: #e0e0e0; /* Light text color */
+}
+
+@media (min-width: 600px) {
+  body {
+    margin: 40px; /* Increased margin */
+  }
+  
+  header {
+    border-radius: 8px;
+  }
+}
