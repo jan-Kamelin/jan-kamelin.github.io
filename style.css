@@ -1,24 +1,15 @@
-:root {
-  --bg: #0f0f0f;
-  --fg: #f3f3f3;
-  --card-bg: #1c1c1e;
-  --border: #333;
-  --accent: #ccc;
-  --accent-hover: #fff;
-  --button-bg: #333;
-  --button-hover: #444;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@font-face {
+  font-family: 'Nasin Nanpa';
+  src: url('nasin-nanpa.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-  font-family: sans-serif;
-  background-color: var(--bg);
-  color: var(--fg);
+  margin: 0;
+  font-family: 'Nasin Nanpa', sans-serif;
+  background-color: #0f0f0f;
+  color: #f3f3f3;
   line-height: 1.6;
 }
 
@@ -30,30 +21,28 @@ body {
 
 h1, h2 {
   color: #ffffff;
-  margin-bottom: 1rem;
 }
 
 .card {
-  background-color: var(--card-bg);
-  border: 1px solid var(--border);
+  background-color: #1c1c1e;
+  border: 1px solid #333;
   border-radius: 0.5rem;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
 .card ul {
-  padding-left: 1.25rem;
-  list-style: disc;
+  padding-left: 1rem;
 }
 
 .icon-links a {
   margin-right: 1rem;
-  color: var(--accent);
+  color: #ccc;
   text-decoration: none;
 }
 
 .icon-links a:hover {
-  color: var(--accent-hover);
+  color: #fff;
 }
 
 footer {
@@ -64,15 +53,15 @@ footer {
 }
 
 button {
-  background-color: var(--button-bg);
+  background-color: #333;
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
   border-radius: 0.25rem;
   cursor: pointer;
-  font: inherit;
+  font-family: 'Nasin Nanpa', sans-serif;
 }
 
 button:hover {
-  background-color: var(--button-hover);
+  background-color: #444;
 }
