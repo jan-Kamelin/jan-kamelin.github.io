@@ -14,6 +14,11 @@ body {
   color: #e0e0e0; /* Light text color */
 }
 
+/* Override the font for Latin alphabet */
+.special-font {
+    font-family: 'Times New Roman', Times, serif;
+}
+
 header {
   background-color: #1a1a1a; /* Dark gray */
   color: #ffffff; /* White text */
